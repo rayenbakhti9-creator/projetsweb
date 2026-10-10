@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Étudier à l'ISET Zaghouan</title>
+</head>
+<body>
+
+    <h1>Étudier à l'ISET Zaghouan</h1>
+
+    <h2>Ma première page HTML</h2>
+
+    <hr>
+
+    <p title="Présentation de l'ISET">
+        Je suis étudiant à l'ISET Zaghouan.
+        Cette école propose une formation en
+        <strong>Technologie de l'Informatique</strong>.
+    </p>
+
+    <p>
+        J'apprends le HTML pour créer des pages web.
+        <br>
+        C'est un domaine <em>intéressant</em>.
+    </p>
+
+</body>
+</html>
