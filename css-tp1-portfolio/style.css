@@ -1,0 +1,139 @@
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  background: #F7FAFF;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+
+h1, h2, h3 {
+  font-family: 'Rubik', sans-serif;
+  color: #0B2447;
+}
+p {
+  color: #0B2447;
+}
+
+
+main h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+.entete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0B2447;
+  padding: 16px 32px;
+}
+.logo {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #DCEBFF;
+}
+
+
+.menu a {
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-left: 24px;
+}
+
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+
+.hero {
+  background: linear-gradient(135deg, #0B2447, #1D4ED8);
+  text-align: center;
+  padding: 80px 20px;
+}
+.hero h1 {
+  color: #FFFFFF;
+}
+.hero p {
+  color: #FFFFFF;
+}
+.bouton {
+  display: inline-block;
+  background: #FFFFFF;
+  color: #0B2447;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+}
+
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+
+.grille {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+.carte {
+  position: relative;
+  width: 320px;
+  margin: 20px;
+  background: #FFFFFF;
+  border: 2px solid #1D4ED8;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(11, 36, 71, 0.15);
+}
+
+
+.badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #1D4ED8;
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+
+
+.liste {
+  list-style: none;
+  padding: 0;
+}
+.liste li {
+  padding: 10px 16px;
+}
+.liste li:nth-child(even) {
+  background: #DCEBFF;
+}
+
+
+.pied {
+  display: flex;
+  justify-content: center;
+  background: #0B2447;
+  padding: 20px;
+}
+.pied p {
+  color: #FFFFFF;
+  margin: 0;
+}
