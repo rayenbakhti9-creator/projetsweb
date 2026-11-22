@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevDays 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="accueil">
+
+    <!-- Navigation -->
+    <header class="entete">
+        <nav class="barre">
+            <a href="#accueil" class="logo">DevDays</a>
+
+            <ul class="menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#ateliers">Ateliers</a></li>
+                <li><a href="#inscription">Inscription</a></li>
+            </ul>
+
+            <a href="#inscription" class="btn btn-nav">Participer</a>
+        </nav>
+    </header>
+
+    <!-- Bannière -->
+    <section class="hero">
+        <span class="ruban">Édition 2026</span>
+
+        <div class="hero-contenu">
+            <p class="surtitre">L'événement des passionnés du Web</p>
+            <h1>DevDays 2026</h1>
+
+            <p>
+                Découvrez les technologies Web, partagez vos idées
+                et développez vos compétences.
+            </p>
+
+            <a href="#inscription" class="btn">Je m'inscris</a>
+        </div>
+    </section>
+
+    <!-- Pourquoi participer -->
+    <section class="section section-grise">
+        <h2>Pourquoi participer ?</h2>
+
+        <p class="description">
+            Une journée pour apprendre, échanger et créer.
+            Participez à des ateliers pratiques animés
+            par des passionnés du développement Web.
+        </p>
+
+        <div class="chiffres">
+            <div class="chiffre">
+                <strong>3</strong>
+                <span>Ateliers</span>
+            </div>
+
+            <div class="chiffre">
+                <strong id="participants">150</strong>
+                <span>Participants</span>
+            </div>
+
+            <div class="chiffre">
+                <strong>1</strong>
+                <span>Journée</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ateliers -->
+    <section class="section" id="ateliers">
+        <h2>Nos ateliers</h2>
+
+        <p class="description">
+            Choisissez l'atelier qui vous intéresse.
+        </p>
+
+        <div class="ateliers">
+
+            <!-- Atelier 1 -->
+            <article class="atelier">
+                <span class="badge">Débutant</span>
+
+                <h3>HTML5 et CSS3</h3>
+
+                <p>
+                    Apprenez à structurer et à mettre en forme
+                    une page Web moderne.
+                </p>
+
+                <p class="horaire">09 h 00 - 10 h 30</p>
+
+                <a href="#inscription" class="btn">
+                    Choisir cet atelier
+                </a>
+            </article>
+
+            <!-- Atelier 2 -->
+            <article class="atelier">
+                <span class="badge">Populaire</span>
+
+                <h3>JavaScript</h3>
+
+                <p>
+                    Rendez vos pages Web interactives grâce
+                    aux événements et au DOM.
+                </p>
+
+                <p class="horaire">11 h 00 - 12 h 30</p>
+
+                <a href="#inscription" class="btn">
+                    Choisir cet atelier
+                </a>
+            </article>
+
+            <!-- Atelier 3 -->
+            <article class="atelier">
+                <span class="badge">Pratique</span>
+
+                <h3>Git et GitHub</h3>
+
+                <p>
+                    Découvrez les bases du suivi des versions
+                    et du travail collaboratif.
+                </p>
+
+                <p class="horaire">14 h 00 - 15 h 30</p>
+
+                <a href="#inscription" class="btn">
+                    Choisir cet atelier
+                </a>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Formulaire -->
+    <section class="section section-grise" id="inscription">
+        <h2>Formulaire d'inscription</h2>
+
+        <p class="description">
+            Remplissez le formulaire pour participer à DevDays.
+        </p>
+
+        <form class="formulaire" id="form">
+
+            <!-- Nom -->
+            <div class="champ">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" placeholder="Votre nom">
+                <div class="erreur" id="err-nom"></div>
+            </div>
+
+            <!-- Prénom -->
+            <div class="champ">
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" placeholder="Votre prénom">
+                <div class="erreur" id="err-prenom"></div>
+            </div>
+
+            <!-- Email -->
+            <div class="champ">
+                <label for="email">Adresse e-mail</label>
+                <input type="email" id="email" placeholder="exemple@email.com">
+                <div class="erreur" id="err-email"></div>
+            </div>
+
+            <!-- Atelier -->
+            <div class="champ">
+                <label for="atelier">Atelier souhaité</label>
+
+                <select id="atelier">
+                    <option value="">-- Choisir un atelier --</option>
+                    <option value="HTML5 et CSS3">HTML5 et CSS3</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Git et GitHub">Git et GitHub</option>
+                    <option value="Python & data">Python & data</option>
+                </select>
+
+                <div class="erreur" id="err-atelier"></div>
+            </div>
+
+            <!-- Niveau -->
+            <fieldset>
+                <legend>Votre niveau</legend>
+
+                <div class="choix">
+                    <label>
+                        <input type="radio" name="niveau" value="Débutant">
+                        Débutant
+                    </label>
+
+                    <label>
+                        <input type="radio" name="niveau" value="Intermédiaire">
+                        Intermédiaire
+                    </label>
+
+                    <label>
+                        <input type="radio" name="niveau" value="Avancé">
+                        Avancé
+                    </label>
+                </div>
+
+                <div class="erreur" id="err-niveau"></div>
+            </fieldset>
+
+            <!-- Message -->
+            <div class="champ">
+                <label for="message">Vos attentes ou vos questions</label>
+
+                <textarea id="message" rows="5"
+                    placeholder="Votre message..."></textarea>
+
+                <div id="compteur-message">0 / 300 caractères</div>
+
+                <div class="erreur" id="err-message"></div>
+            </div>
+
+            <!-- Aperçu -->
+            <p id="apercu"></p>
+
+            <!-- Retour -->
+            <p id="retour"></p>
+
+            <!-- Boutons -->
+            <div class="form-actions">
+                <button type="submit" class="btn">
+                    Envoyer l'inscription
+                </button>
+
+                <button type="reset" class="btn btn-secondaire">
+                    Réinitialiser
+                </button>
+            </div>
+
+        </form>
+    </section>
+
+    <!-- Pied de page -->
+    <footer class="pied">
+        <p>© 2026 DevDays — Événement dédié au développement Web</p>
+
+        <a href="#accueil">Retour en haut</a>
+    </footer>
+
+    <!-- Bouton retour en haut -->
+    <a href="#accueil" class="haut">↑</a>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
